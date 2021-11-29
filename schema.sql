@@ -4,6 +4,14 @@ CREATE DATABASE vet_clinic
 
 \c vet_clinic
 
-
+CREATE TABLE animals (
+  id      INT GENERATED ALWAYS AS IDENTITY,
+  name    CHAR(50),
+  date_of_birth    DATE,
+  escape_attempts    SMALLINT,
+  neutered     BOOLEAN,
+  weight_kg    DECIMAL,
+  PRIMARY KEY(id)
+);
 
 
