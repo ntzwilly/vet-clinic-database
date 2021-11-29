@@ -8,3 +8,5 @@ SELECT name FROM animals WHERE EXTRACT(YEAR FROM date_of_birth) BETWEEN 2016 AND
 SELECT name FROM animals WHERE neutered = true AND escape_attempts < 3;
 
 SELECT date_of_birth FROM animals WHERE name IN ('Agumon', 'Pikachu');
+
+SELECT name, escape_attempts FROM animals WHERE weight_kg > 10.5;
