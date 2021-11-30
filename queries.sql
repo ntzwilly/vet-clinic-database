@@ -46,3 +46,5 @@ SELECT COUNT(name) FROM animals;
 SELECT COUNT(*) FROM animals WHERE escape_attempts = 0;
 
 SELECT AVG(weight_kg) FROM animals;
+
+SELECT neutered, MAX(escape_attempts) FROM animals GROUP BY neutered;
