@@ -32,3 +32,6 @@ SELECT * FROM animals;
 BEGIN;
 DELETE FROM animals;
 ROLLBACK;
+
+BEGIN;
+DELETE FROM animals WHERE date_of_birth > '2022-1-1'::date;
