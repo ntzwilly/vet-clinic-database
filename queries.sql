@@ -24,7 +24,7 @@ ROLLBACK;
 SELECT * FROM animals;
 
 BEGIN;
-UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon%';
+UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon';
 UPDATE animals SET species = 'pokemon' WHERE species is NULL;
 COMMIT;
 SELECT * FROM animals;
@@ -39,3 +39,4 @@ SAVEPOINT SP1;
 UPDATE animals SET weight_kg = weight_kg * -1;
 ROLLBACK TO SP1;
 UPDATE animals SET weight_kg = weight_kg * -1 WHERE weight_kg < 0;
+COMMIT;
