@@ -1,6 +1,6 @@
 # Vet clinic database
 
-> create animals table
+> Query and update animals table
 
 ## Getting Started
 
