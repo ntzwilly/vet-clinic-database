@@ -22,3 +22,9 @@ CREATE TABLE owners (
   age    SMALLINT,
   PRIMARY KEY(id)
 );
+
+CREATE TABLE species (
+  id      INT GENERATED ALWAYS AS IDENTITY,
+  name    CHAR(50),
+  PRIMARY KEY(id)
+);
