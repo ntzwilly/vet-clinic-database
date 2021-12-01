@@ -32,4 +32,5 @@ UPDATE animals SET species_id = 2 WHERE species_id IS NULL;
 COMMIT;
 
 BEGIN;
-UPDATE animals SET owner_id = 1 WHERE name = 'Sam Smith';
+UPDATE animals SET owner_id = 1 WHERE name = 'Agumon';
+UPDATE animals SET owner_id = 2 WHERE name IN ('Gabumon','Pikachu');
