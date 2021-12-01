@@ -30,3 +30,6 @@ BEGIN;
 UPDATE animals SET species_id = 1 WHERE name LIKE '%mon';
 UPDATE animals SET species_id = 2 WHERE species_id IS NULL;
 COMMIT;
+
+BEGIN;
+UPDATE animals SET owner_id = 1 WHERE name = 'Sam Smith';
