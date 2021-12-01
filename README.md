@@ -1,6 +1,6 @@
 # Vet clinic database
 
-> Query and update animals table
+> Query multiple tables
 
 ## Getting Started
 
