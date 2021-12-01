@@ -28,3 +28,5 @@ CREATE TABLE species (
   name    CHAR(50),
   PRIMARY KEY(id)
 );
+
+ALTER TABLE animals DROP COLUMN species;
