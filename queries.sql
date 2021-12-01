@@ -69,3 +69,8 @@ SELECT animals.name FROM animals INNER JOIN species
 
 SELECT full_name, animals.name FROM animals RIGHT JOIN owners 
     ON owners.id = owner_id;
+
+
+SELECT species.name, COUNT(*) FROM animals FULL OUTER JOIN species 
+    ON species.id = animals.species_id 
+    GROUP BY species.id;
