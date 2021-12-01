@@ -81,4 +81,9 @@ SELECT animals.name FROM animals
     WHERE owners.full_name = 'Jennifer Orwell'
     AND species.name = 'Digimon';
 
+SELECT animals.name FROM animals
+    INNER JOIN owners ON owners.id = animals.owner_id
+    WHERE owners.full_name = 'Dean Winchester'
+    AND animals.escape_attempts = 0;
+
 
