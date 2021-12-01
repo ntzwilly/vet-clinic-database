@@ -16,5 +16,9 @@ CREATE TABLE animals (
 
 ALTER TABLE animals ADD COLUMN species VARCHAR(50);
 
-
-
+CREATE TABLE owners (
+  id      INT GENERATED ALWAYS AS IDENTITY,
+  full_name    CHAR(50),
+  age    SMALLINT,
+  PRIMARY KEY(id)
+);
