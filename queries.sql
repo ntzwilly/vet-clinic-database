@@ -65,3 +65,7 @@ SELECT name, full_name FROM animals INNER JOIN owners
 SELECT animals.name FROM animals INNER JOIN species 
     ON species.id = species_id
     AND species.name = 'Pokemon';
+
+
+SELECT full_name, animals.name FROM animals RIGHT JOIN owners 
+    ON owners.id = owner_id;
