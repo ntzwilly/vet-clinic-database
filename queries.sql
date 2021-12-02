@@ -92,4 +92,10 @@ SELECT owners.full_name, COUNT(animals.owner_id) FROM animals
     GROUP BY owners.id;
 
 
+-- Vet clinic database: add "join table" for visits
+
+SELECT animals.name, visits.date_of_visit FROM animals 
+    INNER JOIN visits ON visits.animal_id = animals.id 
+    INNER JOIN vets ON vets.id = visits.vet_id 
+    WHERE vets.name = 'William Tatcher' ORDER BY date_of_visit DESC LIMIT 1;
 

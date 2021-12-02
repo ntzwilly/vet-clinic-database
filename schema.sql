@@ -48,8 +48,8 @@ CREATE TABLE vets (
 );
 
 CREATE TABLE specializations (
-  vets_id INT REFERENCES vets (id) ON DELETE cascade ON UPDATE cascade,
-  species_id INT REFERENCES species (id) ON DELETE cascade ON UPDATE cascade
+  vet_id INT REFERENCES vets (id) ON DELETE cascade ON UPDATE cascade,
+  specie_id INT REFERENCES species (id) ON DELETE cascade ON UPDATE cascade
 );
 
 CREATE TABLE visits (
