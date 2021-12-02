@@ -107,3 +107,8 @@ SELECT COUNT(DISTINCT animals.name) FROM animals
 SELECT name, specie_id FROM vets 
     FULL OUTER JOIN specializations ON  specializations.vet_id = vets.id;
 
+SELECT animals.name, visits.date_of_visit FROM animals 
+    INNER JOIN visits ON visits.animal_id = animals.id 
+    INNER JOIN vets ON vets.id = visits.vet_id 
+    WHERE vets.name = 'Stephanie Mendez' AND date_of_visit BETWEEN '2020-4-1'::date AND '2020-8-30'::date;
+
