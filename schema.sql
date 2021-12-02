@@ -52,3 +52,9 @@ CREATE TABLE specializations (
   species_id INT REFERENCES species (id) ON DELETE cascade ON UPDATE cascade
 );
 
+CREATE TABLE visits (
+  animal_id INT REFERENCES animals (id) ON DELETE cascade ON UPDATE cascade,
+  vet_id INT REFERENCES vets (id) ON DELETE cascade ON UPDATE cascade,
+  date_of_visit DATE
+);
+
