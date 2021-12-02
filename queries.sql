@@ -99,3 +99,8 @@ SELECT animals.name, visits.date_of_visit FROM animals
     INNER JOIN vets ON vets.id = visits.vet_id 
     WHERE vets.name = 'William Tatcher' ORDER BY date_of_visit DESC LIMIT 1;
 
+SELECT COUNT(DISTINCT animals.name) FROM animals 
+    INNER JOIN visits ON visits.animal_id = animals.id 
+    INNER JOIN vets ON vets.id = visits.vet_id 
+    WHERE vets.name = 'Stephanie Mendez';
+
