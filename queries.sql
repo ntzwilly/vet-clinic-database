@@ -120,3 +120,9 @@ SELECT name, COUNT(*) FROM animals
 SELECT animals.name as animal_name, vets.name as vet_name, visits.date_of_visit FROM animals 
     INNER JOIN visits ON visits.animal_id = animals.id 
     INNER JOIN vets ON vets.id = visits.vet_id ORDER BY date_of_visit DESC LIMIT 1;
+
+SELECT COUNT(visits.animal_id) FROM visits
+    INNER JOIN vets ON vets.id = visits.vet_id
+    INNER JOIN animals ON animals.id = visits.animal_id
+    INNER JOIN specializations ON specializations.vet_id = vets.id
+    WHERE specializations.specie_id != animals.species_id;
