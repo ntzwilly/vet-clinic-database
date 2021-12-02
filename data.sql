@@ -50,3 +50,4 @@ BEGIN;
 INSERT INTO specializations (vet_id, specie_id) VALUES (1, 1);
 INSERT INTO specializations (vet_id, specie_id) VALUES (3, 2);
 INSERT INTO specializations (vet_id, specie_id) VALUES (3, 1);
+INSERT INTO specializations (vet_id, specie_id) VALUES (4, 2);
