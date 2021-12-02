@@ -1,6 +1,6 @@
 # Vet clinic database
 
-> Query multiple tables
+> Add "join table" for visits
 
 ## Getting Started
 
