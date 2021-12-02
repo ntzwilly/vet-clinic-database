@@ -73,4 +73,4 @@ INSERT INTO visits (animal_id, vet_id, date_of_visit) VALUES (9, 2, '2019-5-15')
 INSERT INTO visits (animal_id, vet_id, date_of_visit) VALUES (9, 2, '2020-2-27');
 INSERT INTO visits (animal_id, vet_id, date_of_visit) VALUES (9, 2, '2020-8-3');
 INSERT INTO visits (animal_id, vet_id, date_of_visit) VALUES (10, 3, '2020-5-24');
-
+INSERT INTO visits (animal_id, vet_id, date_of_visit) VALUES (10, 1, '2021-1-11');
