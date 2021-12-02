@@ -55,3 +55,4 @@ COMMIT;
 
 BEGIN;
 INSERT INTO visits (animal_id, vet_id, date_of_visit) VALUES (1, 1, '2020-5-24');
+INSERT INTO visits (animal_id, vet_id, date_of_visit) VALUES (1, 3, '2020-7-22');
