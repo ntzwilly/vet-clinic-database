@@ -20,7 +20,13 @@ SELECT * FROM animals WHERE weight_kg >= 10.4 AND weight_kg <= 17.3;
 
 
 BEGIN;
-UPDATE animals SET species = 'unspecified';
+UPDATE animals SET spec
+Vet clinic database: create animals table- make changes
+Project changes
+Solo
+0.5
+COMPLETED
+ies = 'unspecified';
 SELECT * FROM animals;
 ROLLBACK;
 SELECT * FROM animals;
