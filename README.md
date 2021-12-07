@@ -1,6 +1,6 @@
 # Vet clinic database
 
-> Add "join table" for visits
+> Database schema diagram
 
 ![database_diagram](https://user-images.githubusercontent.com/9049260/145033629-81fc1b7e-4367-4183-a033-3ba11bda64c2.png)
 
