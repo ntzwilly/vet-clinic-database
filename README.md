@@ -2,6 +2,8 @@
 
 > Add "join table" for visits
 
+![database_diagram](https://user-images.githubusercontent.com/9049260/145033629-81fc1b7e-4367-4183-a033-3ba11bda64c2.png)
+
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
